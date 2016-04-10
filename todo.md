@@ -4,7 +4,7 @@
 - [ ] Ajouter un film
 - [ ] Ajouter un acteur à un film
 - [ ] Afficher la liste des films
-- [ ] 
+- [x] 
 
 
 ## Point Bonus
