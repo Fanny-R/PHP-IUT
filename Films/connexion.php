@@ -8,10 +8,11 @@
 	<?php
 
 function connectDb(){
-      $host="localhost"; // ou sql.hebergeur.com
-      $user="login";
-      $password="xxxxxx";
-      $dbname="login";
+    $host="localhost";
+    $user="p1505707";
+    $password="242869";
+    $dbname="p1505707";
+    
   try {
        $pdo=new PDO('mysql:host='.$host.';dbname='.$dbname.
                     ';charset=utf8',$user,$password);
