@@ -8,7 +8,7 @@
 	<?php
 
 function connectDb(){
-      $host="sql.hebergeur.com";
+      $host="localhost"; // ou sql.hebergeur.com
       $user="login";
       $password="xxxxxx";
       $dbname="login";
