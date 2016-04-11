@@ -8,6 +8,7 @@
 - [ ] Variable injecté via execute()
 - [ ] Nom de fonction et variable claire
 - [ ] Valide W3C
+- [ ] Générer la documantation PHP
 - [x] 
 
 
