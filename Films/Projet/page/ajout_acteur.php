@@ -5,7 +5,7 @@
 
 
 
-<form method="post" action="insertionActeur.php">
+<form method="post" action="../insertion/insertionActeur.php">
 
     <div id="input_form">
         <label for="prenom_acteur">Prénom:</label>
@@ -23,4 +23,4 @@
 
 </form>
 
-<?php include ("bottom_page.html");?>
+<?php include("bottom_page.html");?>

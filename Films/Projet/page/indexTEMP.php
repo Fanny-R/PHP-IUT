@@ -1,4 +1,4 @@
-<?php include("top_page.php");?>
+<?php include("../top_page.php");?>
 
 <title>PutridTomatoes</title>
 </head>

@@ -4,7 +4,7 @@
 </head>
 <body>
 
-<form method="post" action="insertionFilm.php">
+<form method="post" action="../insertion/insertionFilm.php">
 
     <div id="input_form">
         <label for="nom_film">Nom du film :</label>
@@ -25,6 +25,4 @@
 
 </form>
 
-<?php include ("bottom_page.html");?>
-</body>
-</html>
+<?php include("bottom_page.html");?>
