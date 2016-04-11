@@ -7,7 +7,7 @@
 - [ ] Validation des données côté serveur
 - [ ] Variable injecté via execute()
 - [ ] Nom de fonction et variable claire
-- [ ]Valide W3C
+- [ ] Valide W3C
 - [x] 
 
 
