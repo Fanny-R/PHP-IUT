@@ -1,6 +1,6 @@
 <?php
 
-include("../connexion.php");
+include("connexion.php");
 
 class Role
 {
@@ -8,6 +8,12 @@ class Role
     /****************/
     /*    METHODE   */
     /***************/
+
+    public function __construct($id_film, $id_acteur)
+    {
+        $this->id_acteur=$id_acteur;
+        $this->id_film=$id_film;
+    }
 
     public function liaison()
     {

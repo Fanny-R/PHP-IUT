@@ -2,10 +2,11 @@
 <html>
 <head>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="../style.css"/>
-    <?php include("../class/film.php");
-    ?>
-    <title>PutridTomatoes</title>
+    <link rel="stylesheet" href="style.css"/>
+    <?php include "Acteur.php";?>
+    <?php include "Film.php";?>
+    <?php include "connexion.php";?>
+    <title>PutridTomatoes : Edition Casting</title>
 </head>
 <body>
 
@@ -16,7 +17,7 @@ $query = $bdd->prepare('SELECT * FROM film');
 $query->execute();
 ?>
 
-<form method="post" action="../insertion/insertionRole.php">
+<form method="post" action="insertionRole.php">
     <label>
         <select name="Film" size="1">
 
@@ -25,7 +26,9 @@ $query->execute();
             while ($data = $query->fetch()) {
                 $ceFilm = new Film($data['id_film'], $data["nom_film"], $data["annee_film"], $data["score"]);
                 ?>
-                <option value="<?php echo $ceFilm->getId() ?>"><?php echo $ceFilm->getTitle() ?></option>
+                <option value="<?php echo $ceFilm->getId() ?>">
+                    <?php echo $ceFilm->getTitle() ?>
+                </option>
             <?php } ?>
         </select>
     </label>
@@ -44,9 +47,8 @@ $query->execute();
             while ($data = $query->fetch()) {
                 $cetActeur = new Acteur($data['ID_ACTEUR'], $data['NOM_ACTEUR'], $data['PRENOM_ACTEUR']);
                 ?>
-                <option
-                    value="<?php echo $cetActeur->getId() ?>"><?php echo $cetActeur->getPrenomActeur() . ' ' .
-                        $cetActeur->getNomActeur() ?>
+                <option value="<?php echo $cetActeur->getId() ?> ">
+                    <?php echo $cetActeur->getPrenomActeur() . ' ' . $cetActeur->getNomActeur() ?>
                 </option>
             <?php } ?>
         </select>

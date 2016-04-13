@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - @iutdoua-webetu.univ-lyon1.fr" uuid="7321328a-9978-4c7d-955e-2b317d8da5fc">
+      <secret-storage>memory</secret-storage>
+      <user-name>p1505707</user-name>
+    </data-source>
+  </component>
+</project>

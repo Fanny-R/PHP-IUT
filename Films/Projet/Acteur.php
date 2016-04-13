@@ -1,5 +1,4 @@
 <?php
-include("../connexion.php");
 
 
 class Acteur
@@ -91,5 +90,3 @@ class Acteur
 
 
 }
-
-?>

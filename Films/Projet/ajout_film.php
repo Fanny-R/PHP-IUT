@@ -2,14 +2,14 @@
 <html>
 <head>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="../style.css"/>
-    <?php include("../connexion.php"); ?>
+    <link rel="stylesheet" href="style.css"/>
+    <?php include("connexion.php"); ?>
     <title>PutridTomatoes : Ajout/Edition Film</title>
 </head>
 
 <body>
 
-<form method="post" action="../insertion/insertionFilm.php">
+<form method="post" action="insertionFilm.php">
 
     <div id="input_form">
         <label for="nom_film">Nom du film :</label>
@@ -18,7 +18,7 @@
 
     <div id="input_form">
         <label for="annee_prod">Année de production :</label>
-        <input type="number" name="annee_prod" id="annee_prod" size="10" maxlength="10" min="1800"/>
+        <input type="number" name="annee_prod" id="annee_prod" size="10" maxlength="10" min="1880" max="2016"/>
     </div>
 
     <div id="input_form">

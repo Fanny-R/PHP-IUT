@@ -1,5 +1,4 @@
 <?php
-include("../connexion.php");
 
 
 class Film
@@ -20,13 +19,17 @@ class Film
     {
         $title = $this->getTitle();
         $date = $this->getDate();
-        $score = $this->getDate();
+        $score = $this->getScore();
 
         if (!empty($title) || !empty($date) || !empty($score)) {
             $infoFilmTableau = array('n' => $title, 'a' => $date, 's' => $score);
             $bdd = connectDb();
-            $query = $bdd->prepare('SELECT COUNT(*) AS nb FROM film WHERE nom_film = :n');
-            $query->execute($infoFilmTableau);
+            $query = $bdd->prepare('SELECT COUNT(*) AS nb FROM `film` WHERE nom_film = :n');
+//            $query->execute($infoFilmTableau);
+//            Si je met cette ligne de code, le SELECT renvoie un data false au lieu d'un nom.
+//            Donc pour l'instant justilise l'ancienne méthode mais elle n'est pas objet...
+
+            $query->execute(array('n' => $_POST['nom_film']));
             $data = $query->fetch();
 
             if ($data['nb'] >= 1) {

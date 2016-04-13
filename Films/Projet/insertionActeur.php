@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <title>Inséré</title>
-    <?php include("../class/acteur.php"); ?>
+    <?php include("Acteur.php"); ?>
 </head>
 <body>
 Insertion dans la base de donnée.

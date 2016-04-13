@@ -2,8 +2,9 @@
 <html>
 <head>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="../style.css"/>
+    <link rel="stylesheet" href="style.css"/>
     <?php include("connexion.php"); ?>
+    <?php include ("Film.php");?>
     <title>PutridTomatoes</title>
 </head>
 <body>
@@ -20,14 +21,15 @@ $query->execute();
 
     <?php
     while ($data = $query->fetch()) {
+        $film = new Film($data["id_film"],$data["nom_film"],$data["annee_film"],$data["score"]);
 
 
         ?>
         <tr>
-            <td><?php echo $data['nom_film'] ?></td>
-            <td><?php echo $data['annee_film'] ?></td>
-            <td><?php echo $data['score'] ?></td>
-            <td><a href="">Voir</a></td>
+            <td><?php echo $film->getTitle() ?></td>
+            <td><?php echo $film->getDate() ?></td>
+            <td><?php echo $film->getScore() ?></td>
+            <td><a href="liste_acteur.php?id_film=<?php echo $film->getId();?> &amp; nom_film=<?php echo $film->getTitle();?>">Voir</a></td>
 
         </tr>
         <?php

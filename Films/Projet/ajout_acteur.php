@@ -2,14 +2,14 @@
 <html>
 <head>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="../style.css"/>
-    <?php include("../connexion.php"); ?>
+    <link rel="stylesheet" href="style.css"/>
+    <?php include("connexion.php"); ?>
     <title>PutridTomatoes : Ajout/Edition Acteur</title>
 </head>
 <body>
 
 
-<form method="post" action="../insertion/insertionActeur.php">
+<form method="post" action="insertionActeur.php">
 
     <div id="input_form">
         <label for="prenom_acteur">Prénom:</label>

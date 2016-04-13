@@ -7,7 +7,7 @@
   </head>
   <body>
   
-  <form method="post" action="Projet/insertion/insertionFilm.php">
+  <form method="post" action="Projet/insertionFilm.php">
 
     <p>
 

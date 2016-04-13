@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8"/>
     <title>Ma première page en PHP !</title>
-		<?php include("../class/film.php"); ?>
+		<?php include("Film.php"); ?>
 
   </head>
   <body>
