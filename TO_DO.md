@@ -13,11 +13,11 @@
 
 
 ## Point Bonus
-- [ ] Supprimer acteur (avec une liste deroulante) 
+- [x] Supprimer acteur (avec une liste deroulante) 
 - [ ] Joli CSS 
 - [ ] Ajouter plusieurs acteurs en même temps sur le même film. 
-- [ ] Supprimer films (liste deroulante)
-- [ ] Validation des données côté client
+- [x] Supprimer films (liste deroulante)
+- [x] Validation des données côté client
 
 
 
