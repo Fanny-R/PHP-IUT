@@ -8,9 +8,19 @@ class Acteur
     /****************/
     /*    METHODE   */
     /***************/
-
-    public function ajout($nom_acteur, $prenom_acteur)
+    public function __construct($id, $nom, $prenom)
     {
+        $this->id = $id;
+        $this->nom_acteur = $nom;
+        $this->prenom_acteur = $prenom;
+
+    }
+
+    public function ajout()
+    {
+
+        $nom_acteur = $this->getNomActeur();
+        $prenom_acteur = $this->getPrenomActeur();
 
         if (!empty($nom_acteur) || !empty($prenom_acteur)) {
             $infoActeurTableau = array('n' => $nom_acteur, 'p' => $prenom_acteur);
@@ -21,7 +31,7 @@ class Acteur
 
             if ($data['nb'] >= 1) {
 
-                echo 'L"acteur '.$prenom_acteur.' '.$nom_acteur.' existe déjà ';
+                echo 'L"acteur ' . $prenom_acteur . ' ' . $nom_acteur . ' existe déjà ';
 
             } else {
 
@@ -30,7 +40,7 @@ class Acteur
                 $query = $bdd->prepare('INSERT INTO `acteur`(`NOM_ACTEUR`, `PRENOM_ACTEUR`) VALUES (:n, :p)');
                 $query->execute($infoActeurTableau);
 
-                echo 'L"acteur '.$prenom_acteur.' '.$nom_acteur.' a été inséré.';
+                echo 'L"acteur ' . $prenom_acteur . ' ' . $nom_acteur . ' a été inséré.';
 
             }
 

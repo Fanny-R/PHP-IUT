@@ -11,8 +11,8 @@ Insertion dans la base de donnée.
 <?php
 $nom_acteur = $_POST['nom_acteur'];
 $prenom_acteur = $_POST['prenom_acteur'];
-$monActeur = new Acteur();
-$monActeur->ajout($nom_acteur, $prenom_acteur);
+$monActeur = new Acteur(NULL, $nom_acteur, $prenom_acteur);
+$monActeur->ajout();
 ?>
 <?php
 //		$bdd=connectDb();

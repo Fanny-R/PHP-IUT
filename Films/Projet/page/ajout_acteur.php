@@ -1,8 +1,12 @@
-<?php include("top_page.php");?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="../style.css"/>
+    <?php include("../connexion.php"); ?>
     <title>PutridTomatoes : Ajout/Edition Acteur</title>
 </head>
 <body>
-
 
 
 <form method="post" action="../insertion/insertionActeur.php">
@@ -18,9 +22,10 @@
     </div>
 
 
-
     <input type="submit" value="Envoyer"/>
 
 </form>
 
-<?php include("bottom_page.html");?>
+<a href="indexTEMP.php">Retour liste</a>
+</body>
+</html>

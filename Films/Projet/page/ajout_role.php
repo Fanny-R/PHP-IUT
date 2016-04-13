@@ -17,18 +17,19 @@ $query->execute();
 ?>
 
 <form method="post" action="../insertion/insertionRole.php">
+    <label>
         <select name="Film" size="1">
 
 
-            <?php
+            <?php //Création d'un objet Film
             while ($data = $query->fetch()) {
-                $ceFilm = new Film($data["nom_film"],$data["annee_film"],$data["score"]);//Création d'un objet Film
+                $ceFilm = new Film($data['id_film'], $data["nom_film"], $data["annee_film"], $data["score"]);
                 ?>
-                <option value="<?php echo $data['id_film'] ?>"><?php echo $ceFilm->getTitle() ?> </option>
+                <option value="<?php echo $ceFilm->getId() ?>"><?php echo $ceFilm->getTitle() ?></option>
             <?php } ?>
         </select>
+    </label>
 
-<!--Pas encore en objet pour les acteurs -->
     <?php
 
     $bdd = connectDb();
@@ -36,20 +37,26 @@ $query->execute();
     $query->execute();
     ?>
 
-    <select name="Acteur" size="1">
+    <label>
+        <select name="Acteur" size="1">
 
-        <?php
-        while ($data = $query->fetch()) {
-            ?>
-            <option
-                value="<?php echo $data['ID_ACTEUR'] ?>"><?php echo $data['PRENOM_ACTEUR'] . ' ' . $data['NOM_ACTEUR'] ?></option>
-        <?php } ?>
-    </select>
+            <?php //Création d'un objet Acteur
+            while ($data = $query->fetch()) {
+                $cetActeur = new Acteur($data['ID_ACTEUR'], $data['NOM_ACTEUR'], $data['PRENOM_ACTEUR']);
+                ?>
+                <option
+                    value="<?php echo $cetActeur->getId() ?>"><?php echo $cetActeur->getPrenomActeur() . ' ' .
+                        $cetActeur->getNomActeur() ?>
+                </option>
+            <?php } ?>
+        </select>
+    </label>
 
     <input type="submit" value="Envoyer"/>
 
 </form>
 
 
-<?php include("../bottom_page.html"); ?>
-
+<a href="indexTEMP.php">Retour liste</a>
+</body>
+</html>

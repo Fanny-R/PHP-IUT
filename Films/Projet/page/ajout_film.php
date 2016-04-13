@@ -1,7 +1,12 @@
-<?php include("top_page.php");?>
-
-<title>PutridTomatoes : Ajout/Edition Film</title>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="../style.css"/>
+    <?php include("../connexion.php"); ?>
+    <title>PutridTomatoes : Ajout/Edition Film</title>
 </head>
+
 <body>
 
 <form method="post" action="../insertion/insertionFilm.php">
@@ -18,11 +23,13 @@
 
     <div id="input_form">
         <label for="score">Votre score :</label>
-        <input type="number" name="score" id="score" size="10" step="0.1" min="0" max="10"/>
+        <input type="number" name="score" id="score" size="10" step="0.01" min="0" max="10"/>
     </div>
 
     <input type="submit" value="Envoyer"/>
 
 </form>
 
-<?php include("bottom_page.html");?>
+<a href="indexTEMP.php">Retour liste</a>
+</body>
+</html>

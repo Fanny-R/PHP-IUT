@@ -2,15 +2,18 @@
 
 include("../connexion.php");
 
-class role
+class Role
 {
 
     /****************/
     /*    METHODE   */
     /***************/
 
-    public function liaison($id_film, $id_acteur)
+    public function liaison()
     {
+
+        $id_film = $this->getIdFilm();
+        $id_acteur = $this->getIdActeur();
 
         if (!empty($id_film) || !empty($id_acteur)) {
             $infoLiaisonTableau = array('f' => $id_film, 'a' => $id_acteur);

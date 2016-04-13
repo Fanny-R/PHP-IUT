@@ -1,13 +1,17 @@
-<?php include("../top_page.php");?>
-
-<title>PutridTomatoes</title>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="../style.css"/>
+    <?php include("connexion.php"); ?>
+    <title>PutridTomatoes</title>
 </head>
 <body>
 
 <?php
 
-$bdd=connectDb();
-$query=$bdd->prepare('SELECT * FROM film');
+$bdd = connectDb();
+$query = $bdd->prepare('SELECT * FROM film');
 $query->execute();
 
 
@@ -15,20 +19,20 @@ $query->execute();
 <table>
 
     <?php
-while ($data = $query->fetch()){
+    while ($data = $query->fetch()) {
 
 
+        ?>
+        <tr>
+            <td><?php echo $data['nom_film'] ?></td>
+            <td><?php echo $data['annee_film'] ?></td>
+            <td><?php echo $data['score'] ?></td>
+            <td><a href="">Voir</a></td>
+
+        </tr>
+        <?php
+    }
     ?>
-<tr>
-    <td><?php echo $data['nom_film']?></td>
-    <td><?php echo $data['annee_film']?></td>
-    <td><?php echo $data['score']?></td>
-    <td> <a href="">Voir</a></td>
-
-</tr>
-<?php
-}
-?>
 </table>
 <a href="ajout_film.php">Ajout Film</a>
 <a href="ajout_acteur.php">Ajout Acteur</a>

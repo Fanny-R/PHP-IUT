@@ -13,8 +13,8 @@
     $nom = $_POST['nom_film'];
     $annee = $_POST['annee_prod'];
     $score = $_POST['score'];
-    $monFilm = new Film();
-	$monFilm->ajout($nom,$annee,$score);
+    $monFilm = new Film(NULL,$nom,$annee,$score);
+	$monFilm->ajout();
     ?>
 
 
