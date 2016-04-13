@@ -35,61 +35,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="indexTEMP.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Projet/indexTEMP.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="37" selection-end-column="8" />
-              <folding>
-                <marker date="1460546861000" expanded="true" signature="278:296" placeholder="SELECT * FRO... film" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ajout_role.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Projet/ajout_role.php">
+      <file leaf-file-name="ajout_film.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Projet/ajout_film.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="480">
-              <caret line="47" column="28" selection-start-line="47" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-              <folding>
-                <marker date="1460545027000" expanded="true" signature="326:344" placeholder="SELECT * FRO... film" />
-                <marker date="1460545027000" expanded="true" signature="953:973" placeholder="SELECT * FRO... acteur" />
-              </folding>
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="34" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="liste_acteur.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Projet/liste_acteur.php">
+      <file leaf-file-name="supprimer_film.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Projet/supprimer_film.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-              <folding>
-                <marker date="1460548973000" expanded="true" signature="417:533" placeholder="SELECT * FRO... film" />
-                <marker date="1460548973000" expanded="true" signature="572:1142" placeholder="..." />
-                <marker date="1460548973000" expanded="true" signature="906:1055" placeholder="..." />
-              </folding>
+            <state relative-caret-position="360">
+              <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Acteur.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Projet/Acteur.php">
+      <file leaf-file-name="supprimer_acteur.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Projet/supprimer_acteur.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="28" selection-end-column="36" />
-              <folding>
-                <element signature="n#getId#0;n#Acteur#0;n#!!top" expanded="false" />
-                <element signature="n#getNomActeur#0;n#Acteur#0;n#!!top" expanded="false" />
-                <element signature="n#getPrenomActeur#0;n#Acteur#0;n#!!top" expanded="false" />
-                <element signature="n#setId#0;n#Acteur#0;n#!!top" expanded="false" />
-                <element signature="n#setNomActeur#0;n#Acteur#0;n#!!top" expanded="false" />
-                <element signature="n#setPrenomActeur#0;n#Acteur#0;n#!!top" expanded="false" />
-                <marker date="1460544996000" expanded="true" signature="601:655" placeholder="SELECT COUNT... films" />
-                <marker date="1460544996000" expanded="true" signature="601:678" placeholder="SELECT COUNT... acteur" />
-                <marker date="1460544996000" expanded="true" signature="1026:1093" placeholder="INSERT INTO `films`... " />
-              </folding>
+            <state relative-caret-position="360">
+              <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -117,7 +88,6 @@
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/indexTEMP.php" />
         <option value="$PROJECT_DIR$/liste_acteur.php" />
-        <option value="$PROJECT_DIR$/Projet/style.css" />
         <option value="$PROJECT_DIR$/Projet/bottom_page.html" />
         <option value="$PROJECT_DIR$/Projet/top_page.html" />
         <option value="$PROJECT_DIR$/insertionFilm.php" />
@@ -141,17 +111,25 @@
         <option value="$PROJECT_DIR$/Projet/class/Acteur.php" />
         <option value="$PROJECT_DIR$/Projet/class/Film.php" />
         <option value="$PROJECT_DIR$/Projet/page/ajout_role.php" />
-        <option value="$PROJECT_DIR$/Projet/ajout_acteur.php" />
-        <option value="$PROJECT_DIR$/Projet/ajout_film.php" />
-        <option value="$PROJECT_DIR$/Projet/insertionActeur.php" />
-        <option value="$PROJECT_DIR$/Projet/insertionFilm.php" />
         <option value="$PROJECT_DIR$/Projet/autoload.php" />
-        <option value="$PROJECT_DIR$/Projet/Acteur.php" />
-        <option value="$PROJECT_DIR$/Projet/ajout_role.php" />
-        <option value="$PROJECT_DIR$/Projet/Role.php" />
-        <option value="$PROJECT_DIR$/Projet/insertionRole.php" />
+        <option value="$PROJECT_DIR$/comfir_supprim.php" />
+        <option value="$PROJECT_DIR$/Projet/confirm_supprim.php" />
+        <option value="$PROJECT_DIR$/Projet/style.css" />
+        <option value="$PROJECT_DIR$/affichageFilms.php" />
         <option value="$PROJECT_DIR$/Projet/indexTEMP.php" />
         <option value="$PROJECT_DIR$/Projet/liste_acteur.php" />
+        <option value="$PROJECT_DIR$/Projet/ajout_acteur.php" />
+        <option value="$PROJECT_DIR$/Projet/supprimer.php" />
+        <option value="$PROJECT_DIR$/Projet/ajout_role.php" />
+        <option value="$PROJECT_DIR$/Projet/Film.php" />
+        <option value="$PROJECT_DIR$/Projet/Acteur.php" />
+        <option value="$PROJECT_DIR$/Projet/Role.php" />
+        <option value="$PROJECT_DIR$/Projet/insertionRole.php" />
+        <option value="$PROJECT_DIR$/Projet/insertionActeur.php" />
+        <option value="$PROJECT_DIR$/Projet/insertionFilm.php" />
+        <option value="$PROJECT_DIR$/Projet/ajout_film.php" />
+        <option value="$PROJECT_DIR$/Projet/supprimer_film.php" />
+        <option value="$PROJECT_DIR$/Projet/supprimer_acteur.php" />
       </list>
     </option>
   </component>
@@ -677,28 +655,28 @@
       <workItem from="1460383048809" duration="39000" />
       <workItem from="1460383108955" duration="16280000" />
       <workItem from="1460407866085" duration="79000" />
-      <workItem from="1460537083405" duration="8994000" />
+      <workItem from="1460537083405" duration="16794000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25392000" />
+    <option name="totallyTimeSpent" value="33192000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20069444" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -706,13 +684,13 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -755,8 +733,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1460545027000" expanded="true" signature="326:344" placeholder="SELECT * FRO... film" />
-            <marker date="1460545027000" expanded="true" signature="953:973" placeholder="SELECT * FRO... acteur" />
+            <marker date="1460562275000" expanded="true" signature="387:405" placeholder="SELECT * FRO... film" />
+            <marker date="1460562275000" expanded="true" signature="1314:1334" placeholder="SELECT * FRO... acteur" />
           </folding>
         </state>
       </provider>
@@ -779,10 +757,10 @@
             <element signature="n#getIdFilm#0;n#Role#0;n#!!top" expanded="false" />
             <element signature="n#setIdActeur#0;n#Role#0;n#!!top" expanded="false" />
             <element signature="n#setIdFilm#0;n#Role#0;n#!!top" expanded="false" />
-            <marker date="1460545166000" expanded="true" signature="573:625" placeholder="SELECT COUNT... film" />
-            <marker date="1460545166000" expanded="true" signature="573:643" placeholder="SELECT COUNT... casting" />
-            <marker date="1460545166000" expanded="true" signature="573:644" placeholder="SELECT COUNT... casting" />
-            <marker date="1460545166000" expanded="true" signature="995:1056" placeholder="INSERT INTO `film`... " />
+            <marker date="1460562908000" expanded="true" signature="573:625" placeholder="SELECT COUNT... film" />
+            <marker date="1460562908000" expanded="true" signature="573:643" placeholder="SELECT COUNT... casting" />
+            <marker date="1460562908000" expanded="true" signature="573:644" placeholder="SELECT COUNT... casting" />
+            <marker date="1460562908000" expanded="true" signature="1004:1065" placeholder="INSERT INTO `film`... " />
           </folding>
         </state>
       </provider>
@@ -801,9 +779,12 @@
             <element signature="n#setScore#0;n#Film#0;n#!!top" expanded="false" />
             <element signature="n#setTitle#0;n#Film#0;n#!!top" expanded="false" />
             <element signature="n#setId#0;n#Film#0;n#!!top" expanded="false" />
-            <marker date="1460543028000" expanded="true" signature="635:688" placeholder="SELECT COUNT... film" />
-            <marker date="1460543028000" expanded="true" signature="1142:1206" placeholder="UPDATE `film... " />
-            <marker date="1460543028000" expanded="true" signature="1458:1531" placeholder="INSERT INTO `films`... " />
+            <marker date="1460562765000" expanded="true" signature="635:688" placeholder="SELECT COUNT... film" />
+            <marker date="1460562765000" expanded="true" signature="1142:1206" placeholder="UPDATE `film... " />
+            <marker date="1460562765000" expanded="true" signature="1467:1540" placeholder="INSERT INTO `films`... " />
+            <marker date="1460562765000" expanded="true" signature="1939:1976" placeholder="DELETE FROM " />
+            <marker date="1460562765000" expanded="true" signature="1945:1975" placeholder="SELECT COUNT... film" />
+            <marker date="1460562765000" expanded="true" signature="2072:2112" placeholder="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -842,15 +823,19 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="n#__construct#0;n#Acteur#0;n#!!top" expanded="false" />
+            <element signature="n#ajout#0;n#Acteur#0;n#!!top" expanded="false" />
             <element signature="n#getId#0;n#Acteur#0;n#!!top" expanded="false" />
             <element signature="n#getNomActeur#0;n#Acteur#0;n#!!top" expanded="false" />
             <element signature="n#getPrenomActeur#0;n#Acteur#0;n#!!top" expanded="false" />
             <element signature="n#setId#0;n#Acteur#0;n#!!top" expanded="false" />
             <element signature="n#setNomActeur#0;n#Acteur#0;n#!!top" expanded="false" />
             <element signature="n#setPrenomActeur#0;n#Acteur#0;n#!!top" expanded="false" />
-            <marker date="1460544996000" expanded="true" signature="601:655" placeholder="SELECT COUNT... films" />
-            <marker date="1460544996000" expanded="true" signature="601:678" placeholder="SELECT COUNT... acteur" />
-            <marker date="1460544996000" expanded="true" signature="1026:1093" placeholder="INSERT INTO `films`... " />
+            <marker date="1460562908000" expanded="true" signature="601:655" placeholder="SELECT COUNT... films" />
+            <marker date="1460562908000" expanded="true" signature="601:678" placeholder="SELECT COUNT... acteur" />
+            <marker date="1460562908000" expanded="true" signature="1026:1093" placeholder="INSERT INTO `films`... " />
+            <marker date="1460562908000" expanded="true" signature="1512:1553" placeholder="DELETE FROM " />
+            <marker date="1460562908000" expanded="true" signature="1648:1690" placeholder="DELETE FROM " />
           </folding>
         </state>
       </provider>
@@ -891,13 +876,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Projet/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Projet/bottom_page.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -914,34 +892,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/affichageFilms.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7321328a-9978-4c7d-955e-2b317d8da5fc/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Projet/insertionActeur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Projet/ajout_acteur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -962,10 +916,150 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Projet/Film.php">
+    <entry file="file://$PROJECT_DIR$/Projet/confirm_supprim.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="21" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/affichageFilms.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+          <folding>
+            <marker date="1460560821000" expanded="true" signature="242:260" placeholder="SELECT * FRO... film" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet/indexTEMP.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="56" selection-end-column="4" />
+          <folding>
+            <marker date="1460561257000" expanded="true" signature="336:354" placeholder="SELECT * FRO... film" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet/liste_acteur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="636">
+          <caret line="57" column="1" selection-start-line="57" selection-start-column="1" selection-end-line="59" selection-end-column="8" />
+          <folding>
+            <marker date="1460561664000" expanded="true" signature="528:644" placeholder="SELECT * FRO... casting" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet/ajout_acteur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet/ajout_role.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <marker date="1460562275000" expanded="true" signature="387:405" placeholder="SELECT * FRO... film" />
+            <marker date="1460562275000" expanded="true" signature="1314:1334" placeholder="SELECT * FRO... acteur" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet/Role.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="n#__construct#0;n#Role#0;n#!!top" expanded="false" />
+            <element signature="n#getIdActeur#0;n#Role#0;n#!!top" expanded="false" />
+            <element signature="n#getIdFilm#0;n#Role#0;n#!!top" expanded="false" />
+            <element signature="n#setIdActeur#0;n#Role#0;n#!!top" expanded="false" />
+            <element signature="n#setIdFilm#0;n#Role#0;n#!!top" expanded="false" />
+            <marker date="1460562908000" expanded="true" signature="573:625" placeholder="SELECT COUNT... film" />
+            <marker date="1460562908000" expanded="true" signature="573:643" placeholder="SELECT COUNT... casting" />
+            <marker date="1460562908000" expanded="true" signature="573:644" placeholder="SELECT COUNT... casting" />
+            <marker date="1460562908000" expanded="true" signature="1004:1065" placeholder="INSERT INTO `film`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet/insertionRole.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet/insertionActeur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet/insertionFilm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet/supprimer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="69" column="1" selection-start-line="69" selection-start-column="1" selection-end-line="71" selection-end-column="8" />
+          <folding>
+            <marker date="1460562150000" expanded="true" signature="383:401" placeholder="SELECT * FRO... film" />
+            <marker date="1460562150000" expanded="true" signature="1341:1361" placeholder="SELECT * FRO... acteur" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet/Acteur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="63" column="57" selection-start-line="63" selection-start-column="57" selection-end-line="63" selection-end-column="57" />
+          <folding>
+            <element signature="n#__construct#0;n#Acteur#0;n#!!top" expanded="false" />
+            <element signature="n#ajout#0;n#Acteur#0;n#!!top" expanded="false" />
+            <element signature="n#getId#0;n#Acteur#0;n#!!top" expanded="false" />
+            <element signature="n#getNomActeur#0;n#Acteur#0;n#!!top" expanded="false" />
+            <element signature="n#getPrenomActeur#0;n#Acteur#0;n#!!top" expanded="false" />
+            <element signature="n#setId#0;n#Acteur#0;n#!!top" expanded="false" />
+            <element signature="n#setNomActeur#0;n#Acteur#0;n#!!top" expanded="false" />
+            <element signature="n#setPrenomActeur#0;n#Acteur#0;n#!!top" expanded="false" />
+            <marker date="1460562908000" expanded="true" signature="601:655" placeholder="SELECT COUNT... films" />
+            <marker date="1460562908000" expanded="true" signature="601:678" placeholder="SELECT COUNT... acteur" />
+            <marker date="1460562908000" expanded="true" signature="1026:1093" placeholder="INSERT INTO `films`... " />
+            <marker date="1460562908000" expanded="true" signature="1512:1553" placeholder="DELETE FROM " />
+            <marker date="1460562908000" expanded="true" signature="1648:1690" placeholder="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Projet/Film.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="73" column="101" selection-start-line="73" selection-start-column="101" selection-end-line="73" selection-end-column="101" />
           <folding>
             <element signature="n#__construct#0;n#Film#0;n#!!top" expanded="false" />
             <element signature="n#getDate#0;n#Film#0;n#!!top" expanded="false" />
@@ -976,103 +1070,37 @@
             <element signature="n#setScore#0;n#Film#0;n#!!top" expanded="false" />
             <element signature="n#setTitle#0;n#Film#0;n#!!top" expanded="false" />
             <element signature="n#setId#0;n#Film#0;n#!!top" expanded="false" />
-            <marker date="1460543028000" expanded="true" signature="635:688" placeholder="SELECT COUNT... film" />
-            <marker date="1460543028000" expanded="true" signature="1142:1206" placeholder="UPDATE `film... " />
-            <marker date="1460543028000" expanded="true" signature="1458:1531" placeholder="INSERT INTO `films`... " />
+            <marker date="1460562765000" expanded="true" signature="635:688" placeholder="SELECT COUNT... film" />
+            <marker date="1460562765000" expanded="true" signature="1142:1206" placeholder="UPDATE `film... " />
+            <marker date="1460562765000" expanded="true" signature="1467:1540" placeholder="INSERT INTO `films`... " />
+            <marker date="1460562765000" expanded="true" signature="1939:1976" placeholder="DELETE FROM " />
+            <marker date="1460562765000" expanded="true" signature="1945:1975" placeholder="SELECT COUNT... film" />
+            <marker date="1460562765000" expanded="true" signature="2072:2112" placeholder="DELETE FROM " />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Projet/Role.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="24" column="51" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
-          <folding>
-            <element signature="n#__construct#0;n#Role#0;n#!!top" expanded="false" />
-            <element signature="n#getIdActeur#0;n#Role#0;n#!!top" expanded="false" />
-            <element signature="n#getIdFilm#0;n#Role#0;n#!!top" expanded="false" />
-            <element signature="n#setIdActeur#0;n#Role#0;n#!!top" expanded="false" />
-            <element signature="n#setIdFilm#0;n#Role#0;n#!!top" expanded="false" />
-            <marker date="1460545166000" expanded="true" signature="573:625" placeholder="SELECT COUNT... film" />
-            <marker date="1460545166000" expanded="true" signature="573:643" placeholder="SELECT COUNT... casting" />
-            <marker date="1460545166000" expanded="true" signature="573:644" placeholder="SELECT COUNT... casting" />
-            <marker date="1460545166000" expanded="true" signature="995:1056" placeholder="INSERT INTO `film`... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Projet/insertionRole.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Projet/ajout_film.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Projet/insertionFilm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="37" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Projet/Acteur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="28" selection-end-column="36" />
-          <folding>
-            <element signature="n#getId#0;n#Acteur#0;n#!!top" expanded="false" />
-            <element signature="n#getNomActeur#0;n#Acteur#0;n#!!top" expanded="false" />
-            <element signature="n#getPrenomActeur#0;n#Acteur#0;n#!!top" expanded="false" />
-            <element signature="n#setId#0;n#Acteur#0;n#!!top" expanded="false" />
-            <element signature="n#setNomActeur#0;n#Acteur#0;n#!!top" expanded="false" />
-            <element signature="n#setPrenomActeur#0;n#Acteur#0;n#!!top" expanded="false" />
-            <marker date="1460544996000" expanded="true" signature="601:655" placeholder="SELECT COUNT... films" />
-            <marker date="1460544996000" expanded="true" signature="601:678" placeholder="SELECT COUNT... acteur" />
-            <marker date="1460544996000" expanded="true" signature="1026:1093" placeholder="INSERT INTO `films`... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Projet/ajout_role.php">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
-          <caret line="47" column="28" selection-start-line="47" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding>
-            <marker date="1460545027000" expanded="true" signature="326:344" placeholder="SELECT * FRO... film" />
-            <marker date="1460545027000" expanded="true" signature="953:973" placeholder="SELECT * FRO... acteur" />
-          </folding>
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="34" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Projet/indexTEMP.php">
+    <entry file="file://$PROJECT_DIR$/Projet/supprimer_film.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="37" selection-end-column="8" />
-          <folding>
-            <marker date="1460546861000" expanded="true" signature="278:296" placeholder="SELECT * FRO... film" />
-          </folding>
+        <state relative-caret-position="360">
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Projet/liste_acteur.php">
+    <entry file="file://$PROJECT_DIR$/Projet/supprimer_acteur.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-          <folding>
-            <marker date="1460548973000" expanded="true" signature="417:533" placeholder="SELECT * FRO... film" />
-            <marker date="1460548973000" expanded="true" signature="572:1142" placeholder="..." />
-            <marker date="1460548973000" expanded="true" signature="906:1055" placeholder="..." />
-          </folding>
+        <state relative-caret-position="360">
+          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>

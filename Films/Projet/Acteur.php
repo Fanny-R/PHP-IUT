@@ -46,6 +46,29 @@ class Acteur
         }
     }
 
+    public function supprimer()
+    {
+        {
+            $id = $this->id;
+
+            if (!empty($id)) {
+                $ActSuppTableau = array('a' => $id);
+                $bdd = connectDb();
+                $query = $bdd->prepare('DELETE FROM `acteur` WHERE ID_ACTEUR = :a');
+                $query->execute($ActSuppTableau);
+
+                $query = $bdd->prepare('DELETE FROM `casting` WHERE ID_ACTEUR = :a');
+                $query->execute($ActSuppTableau);
+
+
+                echo '<h3>L"acteur a été supprimé.</h3>';
+            } else {
+                echo '<h3>L"acteur ne fait pas parti de la base de donnée ou a déjà été supprimé.</h3>';
+            }
+
+        }
+    }
+
     /****************/
     /*GETTER SETTTER*/
     /***************/

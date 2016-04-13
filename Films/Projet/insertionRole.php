@@ -2,12 +2,13 @@
 <html>
 <head>
     <meta charset="utf-8"/>
-    <title>Ma première page en PHP !</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <title>Insertion</title>
     <?php include("Role.php"); ?>
 
 </head>
 <body>
-Insertion
+<h1>La base de donnée à été mise à jour</h1>
 <?php
 $id_film = $_POST['Film'];
 $id_acteur = $_POST['Acteur'];
@@ -19,6 +20,8 @@ $monRole = new Role($id_film, $id_acteur);
 $monRole->liaison();
 ?>
 
-
+<a href="indexTEMP.php">
+    <button type="button" class="btn btn-default">Retour liste</button>
+</a>
 </body>
 </html>

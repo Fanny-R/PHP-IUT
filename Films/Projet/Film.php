@@ -37,7 +37,7 @@ class Film
                 $query = $bdd->prepare('UPDATE `film` SET `annee_film`=:a,`score`=:s WHERE `nom_film`=:n');
                 $query->execute($infoFilmTableau);
 
-                echo 'Le film ' . $title . ' a été mis à jour.';
+                echo '<h3>Le film ' . $title . ' a été mis à jour.</h3>';
 
             } else {
 
@@ -46,12 +46,35 @@ class Film
                 $query = $bdd->prepare('INSERT INTO `film`(`nom_film`, `annee_film`, `score`) VALUES (:n, :a, :s)');
                 $query->execute($infoFilmTableau);
 
-                echo 'Le film ' . $title . ' a été inséré.';
+                echo '<h3>Le film ' . $title . ' a été inséré.</h3>';
 
             }
 
         }
 
+    }
+
+    public function supprimer()
+    {
+        {
+            $id = $this->id;
+
+            if (!empty($id)) {
+                $filmSuppTableau = array('i' => $id);
+                $bdd = connectDb();
+                $query = $bdd->prepare('DELETE FROM `film` WHERE id_film = :i');
+                $query->execute($filmSuppTableau);
+
+                $query = $bdd->prepare('DELETE FROM `casting` WHERE id_film = :i');
+                $query->execute($filmSuppTableau);
+
+
+                echo '<h3>Le film a été supprimé.</h3>';
+            } else {
+                echo '<h3>Le film ne fait pas parti de la base de donnée ou a déjà été supprimé.</h3>';
+            }
+
+        }
     }
 
     /****************/
