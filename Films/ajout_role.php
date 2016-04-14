@@ -8,10 +8,11 @@
 <body>
 <?php require_once('autoload.php'); ?>
 
+<!--Permet de récupérer les données propres à la création d'un role-->
+
 <div class="container">
     <h2>Faite le lien entre acteur et film</h2>
     <form method="post" action="insertionRole.php" role="form">
-
 
 
         <div class=w"form-group">
@@ -36,7 +37,7 @@
             <?php
             $repoActeur = new ActeurRepository($PDO);
             $data = $repoActeur->getAllActeur();
-            foreach ($data as $acteur){
+            foreach ($data as $acteur) {
                 ?>
                 <option value="<?php echo $acteur->getId() ?> ">
                     <?php echo $acteur->getPrenomActeur() . ' ' . $acteur->getNomActeur() ?>

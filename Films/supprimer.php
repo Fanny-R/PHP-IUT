@@ -9,7 +9,7 @@
 <body>
 <?php require_once('autoload.php'); ?>
 
-
+<!--Suppression d'un film-->
 <div class="container">
     <h2>Selectionner l'acteur <strong>ou</strong> le film à supprimer</h2>
     <form role="form" method="post" action="supprimer_film.php">
@@ -17,15 +17,12 @@
             <label for="sel1">Sélectionner un film:</label>
             <select name="Film" size="1" class="form-control" id="sel1">
 
-                <?php //Création d'un objet Film
-                $bdd = connectDb();
-                $query = $bdd->prepare('SELECT * FROM film');
-                $query->execute();
-                while ($data = $query->fetch()) {
-                    $ceFilm = new Film($data['id_film'], $data["nom_film"], $data["annee_film"], $data["score"]);
+                <?php
+                $data = $repoFilm->getAllFilm();
+                foreach ($data as $film) {
                     ?>
-                    <option value="<?php echo $ceFilm->getId() ?>">
-                        <?php echo $ceFilm->getTitle() ?>
+                    <option value="<?php echo $film->getId() ?>">
+                        <?php echo $film->getTitle() ?>
                     </option>
                 <?php } ?>
             </select>
@@ -35,25 +32,20 @@
     </form>
 </div>
 <hr>
-<?php
 
-$bdd = connectDb();
-$query = $bdd->prepare('SELECT * FROM acteur');
-$query->execute();
-?>
-
+<!--Suppression d'un acteur-->
 <div class="container">
     <form role="form" method="post" action="supprimer_acteur.php">
         <div class="form-group">
             <label for="sel1">Sélectioner un acteur:</label>
             <select name="Acteur" size="1" class="form-control" id="sel1">
 
-                <?php //Création d'un objet Acteur
-                while ($data = $query->fetch()) {
-                    $cetActeur = new Acteur($data['ID_ACTEUR'], $data['NOM_ACTEUR'], $data['PRENOM_ACTEUR']);
+                <?php
+                $data = $repoActeur->getAllActeur();
+                foreach ($data as $acteur) {
                     ?>
-                    <option value="<?php echo $cetActeur->getId() ?> ">
-                        <?php echo $cetActeur->getPrenomActeur() . ' ' . $cetActeur->getNomActeur() ?>
+                    <option value="<?php echo $acteur->getId() ?> ">
+                        <?php echo $acteur->getPrenomActeur() . ' ' . $acteur->getNomActeur() ?>
                     </option>
                 <?php } ?>
             </select>

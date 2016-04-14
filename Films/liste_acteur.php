@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet"
           href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!--        Permet de remplacer les underscore du lien en espace-->
     <title>
         PutridTomatoes : <?php echo str_replace('_', ' ', $_GET['nom_film']); ?>
     </title>
@@ -16,13 +17,11 @@
         <?php echo str_replace('_', ' ', $_GET['nom_film']); ?> : Les acteurs
     </h2>
 
-
+    <!--Affichage des acteurs par rapport à un film-->
     <?php
-    $infoID = array('i' => $_GET['id_film']);
-    $bdd = connectDb();
-    $query = $bdd->prepare('SELECT * FROM `casting` INNER JOIN `acteur` ON `casting`.`ID_ACTEUR`=`acteur`.`ID_ACTEUR` AND `casting`.`ID_FILM`=:i');
-    $query->execute($infoID);
-    $data = $query->fetch();
+    $id = $_GET['id_film'];
+    $data = $repoCasting->ActeurParFilm($id);
+    
     if (empty($data)) {
         echo "Oh ! Personne n'a joué dans ce film. <a href='ajout_role.php'>En ajouter ?</a>";
     } else {
@@ -38,15 +37,13 @@
         <tbody>
         <?php
 
-        while (!empty($data)) {
-            $acteur = new Acteur($data['ID_ACTEUR'], $data['NOM_ACTEUR'], $data['PRENOM_ACTEUR']);
+       foreach ($data as $acteur){
             ?>
             <tr>
                 <td><?php echo $acteur->getPrenomActeur(); ?></td>
                 <td><?php echo $acteur->getNomActeur(); ?></td>
             </tr>
             <?php
-            $data = $query->fetch();
         }
         }
         ?>

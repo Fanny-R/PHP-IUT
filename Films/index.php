@@ -19,7 +19,7 @@
         </tr>
         </thead>
         <tbody>
-
+<!--Affichage de tous les films en BDD(par ordre d'entrée)-->
         <?php
         $filmRepo = new FilmRepository($PDO);
         $tableauFilm = $filmRepo->getAllFilm();
@@ -30,7 +30,7 @@
                 <td><?php echo $film->getDate() ?></td>
                 <td><?php echo $film->getScore() ?></td>
                 <td>
-                    <a href="liste_acteur.php?id_film=<?php echo $film->getId();?>&amp;nom_film=<?php echo str_replace(' ', '_', $film->getTitle()); ?>">Voir</a>
+                    <a href="liste_acteur.php?id_film=<?php echo $film->getId(); ?>&amp;nom_film=<?php echo str_replace(' ', '_', $film->getTitle()); ?>">Voir</a>
                 </td>
 
             </tr>

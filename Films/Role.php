@@ -1,7 +1,5 @@
 <?php
 
-include("connexion.php");
-
 class Role
 {
 
@@ -9,10 +7,17 @@ class Role
     /*    METHODE   */
     /***************/
 
+    private $id_acteur;
+    private $id_film;
+
+    /****************/
+    /*GETTER SETTTER*/
+    /***************/
+
     public function __construct($id_film, $id_acteur)
     {
-        $this->id_acteur=$id_acteur;
-        $this->id_film=$id_film;
+        $this->id_acteur = $id_acteur;
+        $this->id_film = $id_film;
     }
 
     public function liaison()
@@ -45,23 +50,9 @@ class Role
 
     }
 
-    /****************/
-    /*GETTER SETTTER*/
-    /***************/
-
-    public function getIdActeur()
-    {
-        return $this->id_acteur;
-    }
-
     public function getIdFilm()
     {
         return $this->id_film;
-    }
-
-    public function setIdActeur($id_acteur)
-    {
-        $this->id_acteur = $id_acteur;
     }
 
     public function setIdFilm($id_film)
@@ -73,7 +64,14 @@ class Role
     /*  ATTRIBUTS  */
     /***************/
 
-    private $id_acteur;
-    private $id_film;
+    public function getIdActeur()
+    {
+        return $this->id_acteur;
+    }
+
+    public function setIdActeur($id_acteur)
+    {
+        $this->id_acteur = $id_acteur;
+    }
 
 }

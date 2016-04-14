@@ -8,6 +8,7 @@
 <body>
 <?php require_once('autoload.php'); ?>
 
+<!--Permet de récupérer les données propres à la création d'un acteur-->
 <div class="container">
     <h2>Ajout d'un acteur</h2>
     <form role="form" method="post" action="insertionActeur.php">
