@@ -9,7 +9,7 @@
 <?php require_once('autoload.php'); ?>
 
 <div class="container">
-    <h2>Selectionner l'acteur <strong>ou</strong> le film à supprimer</h2>
+    <h2>Faite le lien entre acteur et film</h2>
     <form method="post" action="insertionRole.php" role="form">
         <div class="form-group">
             <label for="sel1">Sélectionner un film:</label>

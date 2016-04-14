@@ -37,7 +37,7 @@
                 <td><?php echo $film->getDate() ?></td>
                 <td><?php echo $film->getScore() ?></td>
                 <td>
-                    <a href="liste_acteur.php?id_film=<?php echo $film->getId(); ?>&amp;nom_film=<?php echo $film->getTitle(); ?>">Voir</a>
+                    <a href="liste_acteur.php?id_film=<?php echo $film->getId();?>&amp;nom_film=<?php echo str_replace(' ', '_', $film->getTitle()); ?>">Voir</a>
                 </td>
 
             </tr>
