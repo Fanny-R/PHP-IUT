@@ -37,7 +37,10 @@ class Film
                 $query = $bdd->prepare('UPDATE `film` SET `annee_film`=:a,`score`=:s WHERE `nom_film`=:n');
                 $query->execute($infoFilmTableau);
 
-                echo '<h3>Le film ' . $title . ' a été mis à jour.</h3>';
+                echo '<h1>Merci de la modification !</h1>
+                      <div class="alert alert-success">
+                      <strong>Pafait !</strong> Le film ' . $title . ' a été mis à jour.
+                      </div>';
 
             } else {
 
@@ -46,7 +49,10 @@ class Film
                 $query = $bdd->prepare('INSERT INTO `film`(`nom_film`, `annee_film`, `score`) VALUES (:n, :a, :s)');
                 $query->execute($infoFilmTableau);
 
-                echo '<h3>Le film ' . $title . ' a été inséré.</h3>';
+                echo '<h1>Et un de plus !</h1>
+                      <div class="alert alert-success">
+                      <strong>Pafait !</strong> Le film ' . $title . ' a été inséré.
+                      </div>';
 
             }
 
@@ -59,6 +65,7 @@ class Film
         {
             $id = $this->id;
 
+
             if (!empty($id)) {
                 $filmSuppTableau = array('i' => $id);
                 $bdd = connectDb();
@@ -69,10 +76,17 @@ class Film
                 $query->execute($filmSuppTableau);
 
 
-                echo '<h3>Le film a été supprimé.</h3>';
+                echo '<h1>C"était pas un bon film...</h1>
+                        <div class="alert alert-success">
+                      <strong>Parfait !</strong> Le film a été supprimé.
+                      </div>';
             } else {
-                echo '<h3>Le film ne fait pas parti de la base de donnée ou a déjà été supprimé.</h3>';
+                echo '<h1>J"ai rien senti</h1>
+                      <div class="alert alert-warning">
+                      <strong>Attention!</strong> Le film ne fait pas parti de la base de donnée ou a déjà été supprimé.
+                      </div>';
             }
+
 
         }
     }

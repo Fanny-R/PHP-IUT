@@ -4,20 +4,10 @@
     <meta charset="utf-8"/>
     <link rel="stylesheet"
           href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <?php include("connexion.php"); ?>
-    <?php include("Film.php"); ?>
-    <?php include("Acteur.php"); ?>
     <title>PutridTomatoes</title>
 </head>
 <body>
-
-
-<?php
-
-$bdd = connectDb();
-$query = $bdd->prepare('SELECT * FROM film');
-$query->execute();
-?>
+<?php require_once('autoload.php'); ?>
 
 
 <div class="container">
@@ -28,6 +18,9 @@ $query->execute();
             <select name="Film" size="1" class="form-control" id="sel1">
 
                 <?php //Création d'un objet Film
+                $bdd = connectDb();
+                $query = $bdd->prepare('SELECT * FROM film');
+                $query->execute();
                 while ($data = $query->fetch()) {
                     $ceFilm = new Film($data['id_film'], $data["nom_film"], $data["annee_film"], $data["score"]);
                     ?>
@@ -37,7 +30,7 @@ $query->execute();
                 <?php } ?>
             </select>
         </div>
-        <input type="submit" value="Supprimer"/>
+        <input type="submit" class="btn btn-default" value="Supprimer"/>
 
     </form>
 </div>
@@ -65,12 +58,8 @@ $query->execute();
                 <?php } ?>
             </select>
         </div>
-        <input type="submit" value="Supprimer"/>
+        <input type="submit" class="btn btn-default" value="Supprimer"/>
     </form>
-    <a href="indexTEMP.php">
-        <button type="button" class="btn btn-default">Retour liste</button>
-    </a>
-
 </div>
 
 </body>

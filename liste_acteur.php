@@ -3,14 +3,12 @@
 <head>
     <link rel="stylesheet"
           href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
-    <?php include("connexion.php"); ?>
-    <?php include("Acteur.php"); ?>
     <title>
         PutridTomatoes : <?php echo $_GET['nom_film']; ?>
     </title>
 </head>
 <body>
+<?php require_once('autoload.php'); ?>
 
 
 <div class="container">
@@ -55,9 +53,6 @@
         </tbody>
     </table>
 
-    <a href="indexTEMP.php">
-        <button type="button" class="btn btn-default">Retour liste</button>
-    </a>
 </div>
 </body>
 </html>

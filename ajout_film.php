@@ -3,11 +3,12 @@
 <head>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <?php include("connexion.php"); ?>
     <title>PutridTomatoes : Ajout/Edition Film</title>
 </head>
 
 <body>
+<?php require_once('autoload.php'); ?>
+
 <div class="container">
     <h2>Ajout d'un film</h2>
     <form role="form" method="post" action="insertionFilm.php">
@@ -30,9 +31,6 @@
         <input type="submit" class="btn btn-default" value="Envoyer"/>
 
     </form>
-    <a href="indexTEMP.php">
-        <button type="button" class="btn btn-default">Retour liste</button>
-    </a>
 </div>
 
 </body>
