@@ -21,16 +21,9 @@
         <tbody>
 
         <?php
-
-        $bdd = connectDb();
-        $query = $bdd->prepare('SELECT * FROM film');
-        $query->execute();
-
-
-        while ($data = $query->fetch()) {
-            $film = new Film($data["id_film"], $data["nom_film"], $data["annee_film"], $data["score"]);
-
-
+        $filmRepo = new FilmRepository($PDO);
+        $tableauFilm = $filmRepo->getAllFilm();
+        foreach ($tableauFilm as $film) {
             ?>
             <tr>
                 <td><?php echo $film->getTitle() ?></td>
@@ -43,7 +36,9 @@
             </tr>
             <?php
         }
+
         ?>
+
 
         </tbody>
     </table>

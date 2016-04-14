@@ -17,7 +17,21 @@ $prenom_acteur = $_POST['prenom_acteur'];
 
 if (!empty($nom_acteur) && (!empty($prenom_acteur))){
     $monActeur = new Acteur(NULL, $nom_acteur, $prenom_acteur);
-    $monActeur->ajout();
+    $valide = $monActeur->ajout();
+
+    if (!$valide) {
+        echo '<h1>On copie pas !</h1>
+                      <div class="alert alert-warning">
+                      <strong>Attention !</strong> L\'acteur ' . $prenom_acteur . ' ' . $nom_acteur . ' existe déjà 
+                      </div>';
+    } else {
+        echo '<h1>Bienvenue, tu verras, on est bien.</h1>
+                      <div class="alert alert-success">
+                      <strong>Bravo !</strong> L\'acteur ' . $prenom_acteur . ' ' . $nom_acteur . ' a été inséré.
+                      </div>';
+    }
+    
+    
 }else {
     echo '<h1>Mauvaise valeurs</h1>
                       <div class="alert alert-danger">

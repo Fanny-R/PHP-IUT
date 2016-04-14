@@ -21,50 +21,39 @@ class Film
         $date = $this->getDate();
         $score = $this->getScore();
 
-        if (!empty($title) || !empty($date) || !empty($score)) {
-            $infoFilmTableau = array('n' => $title, 'a' => $date, 's' => $score);
-            $bdd = connectDb();
-            $query = $bdd->prepare('SELECT COUNT(*) AS nb FROM `film` WHERE nom_film = :n');
+
+        $infoFilmTableau = array('n' => $title, 'a' => $date, 's' => $score);
+        $bdd = connectDb();
+        $query = $bdd->prepare('SELECT COUNT(*) AS nb FROM `film` WHERE nom_film = :n');
 //            $query->execute($infoFilmTableau);
 //            Si je met cette ligne de code, le SELECT renvoie un data false au lieu d'un nom.
 //            Donc pour l'instant justilise l'ancienne méthode mais elle n'est pas objet...
 
-            $query->execute(array('n' => $_POST['nom_film']));
-            $data = $query->fetch();
+        $query->execute(array('n' => $_POST['nom_film']));
+        $data = $query->fetch();
 
-            if ($data['nb'] >= 1) {
-                $bdd = connectDb();
-                $query = $bdd->prepare('UPDATE `film` SET `annee_film`=:a,`score`=:s WHERE `nom_film`=:n');
-                $query->execute($infoFilmTableau);
+        if ($data['nb'] >= 1) {
+            $bdd = connectDb();
+            $query = $bdd->prepare('UPDATE `film` SET `annee_film`=:a,`score`=:s WHERE `nom_film`=:n');
+            $query->execute($infoFilmTableau);
+            return 1;
 
-                echo '<h1>Merci de la modification !</h1>
-                      <div class="alert alert-success">
-                      <strong>Pafait !</strong> Le film ' . $title . ' a été mis à jour.
-                      </div>';
+        } else {
 
-            } else {
-
-                //Ajout du film
-                $bdd = connectDb();
-                $query = $bdd->prepare('INSERT INTO `film`(`nom_film`, `annee_film`, `score`) VALUES (:n, :a, :s)');
-                $query->execute($infoFilmTableau);
-
-                echo '<h1>Et un de plus !</h1>
-                      <div class="alert alert-success">
-                      <strong>Pafait !</strong> Le film ' . $title . ' a été inséré.
-                      </div>';
-
-            }
-
+            //Ajout du film
+            $bdd = connectDb();
+            $query = $bdd->prepare('INSERT INTO `film`(`nom_film`, `annee_film`, `score`) VALUES (:n, :a, :s)');
+            $query->execute($infoFilmTableau);
+            return 2;
         }
 
+        
     }
 
     public function supprimer()
     {
         {
             $id = $this->id;
-
 
             if (!empty($id)) {
                 $filmSuppTableau = array('i' => $id);
@@ -74,17 +63,9 @@ class Film
 
                 $query = $bdd->prepare('DELETE FROM `casting` WHERE id_film = :i');
                 $query->execute($filmSuppTableau);
-
-
-                echo '<h1>C"était pas un bon film...</h1>
-                        <div class="alert alert-success">
-                      <strong>Parfait !</strong> Le film a été supprimé.
-                      </div>';
+                return true;
             } else {
-                echo '<h1>J"ai rien senti</h1>
-                      <div class="alert alert-warning">
-                      <strong>Attention!</strong> Le film ne fait pas parti de la base de donnée ou a déjà été supprimé.
-                      </div>';
+                return false;
             }
 
 
