@@ -1,12 +1,12 @@
 
 # To do
-- [ ] Ajouter un acteur
+- [x] Ajouter un acteur
 - [x] Ajouter un film
 - [x] Ajouter un acteur à un film
 - [x] Afficher la liste des films
 - [ ] Validation des données côté serveur
 - [x] Variable injecté via execute()
-- [ ] Nom de fonction et variable claire
+- [x] Nom de fonction et variable claire
 - [ ] Valide W3C
 - [ ] Générer la documantation PHP
 - [x] 
