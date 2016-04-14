@@ -3,27 +3,24 @@
 <head>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <?php include "Acteur.php"; ?>
-    <?php include "Film.php"; ?>
-    <?php include "connexion.php"; ?>
     <title>PutridTomatoes : Edition Casting</title>
 </head>
 <body>
+<?php require_once('autoload.php'); ?>
 
-<?php
-
-$bdd = connectDb();
-$query = $bdd->prepare('SELECT * FROM film');
-$query->execute();
-?>
 <div class="container">
     <h2>Selectionner l'acteur <strong>ou</strong> le film à supprimer</h2>
     <form method="post" action="insertionRole.php" role="form">
         <div class="form-group">
             <label for="sel1">Sélectionner un film:</label>
-            <select name="Film" size="1" class="form-control" id="sel1">
+
+            <select name="Film" size="1" class="form-control">
 
                 <?php //Création d'un objet Film
+
+                $bdd = connectDb();
+                $query = $bdd->prepare('SELECT * FROM film');
+                $query->execute();
                 while ($data = $query->fetch()) {
                     $ceFilm = new Film($data['id_film'], $data["nom_film"], $data["annee_film"], $data["score"]);
                     ?>
@@ -42,7 +39,7 @@ $query->execute();
         ?>
 
         <label for="sel1">Sélectionner un Acteur:</label>
-        <select name="Acteur" size="1" class="form-control" id="sel1">
+        <select name="Acteur" size="1" class="form-control">
 
             <?php //Création d'un objet Acteur
             while ($data = $query->fetch()) {
@@ -53,11 +50,8 @@ $query->execute();
                 </option>
             <?php } ?>
         </select>
-        <input type="submit" value="Envoyer"/>
+        <input type="submit" class="btn btn-default" value="Envoyer"/>
     </form>
-    <a href="indexTEMP.php">
-        <button type="button" class="btn btn-default">Retour liste</button>
-    </a>
 </div>
 
 

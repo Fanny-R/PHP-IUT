@@ -30,7 +30,10 @@ class Acteur
 
             if ($data['nb'] >= 1) {
 
-                echo 'L"acteur ' . $prenom_acteur . ' ' . $nom_acteur . ' existe déjà ';
+                echo '<h1>On copie pas !</h1>
+                      <div class="alert alert-warning">
+                      <strong>Attention !</strong> L"acteur ' . $prenom_acteur . ' ' . $nom_acteur . ' existe déjà 
+                      </div>';
 
             } else {
 
@@ -39,9 +42,13 @@ class Acteur
                 $query = $bdd->prepare('INSERT INTO `acteur`(`NOM_ACTEUR`, `PRENOM_ACTEUR`) VALUES (:n, :p)');
                 $query->execute($infoActeurTableau);
 
-                echo 'L"acteur ' . $prenom_acteur . ' ' . $nom_acteur . ' a été inséré.';
+                echo '<h1>Bienvenue, tu verras, on est bien.</h1>
+                      <div class="alert alert-success">
+                      <strong>Bravo !</strong> L"acteur ' . $prenom_acteur . ' ' . $nom_acteur . ' a été inséré.
+                      </div>';
 
             }
+
 
         }
     }
@@ -61,10 +68,17 @@ class Acteur
                 $query->execute($ActSuppTableau);
 
 
-                echo '<h3>L"acteur a été supprimé.</h3>';
+                echo '<h1>De toute, je l"aimais pas</h1>
+                      <div class="alert alert-success">
+                      <strong>Parfait !</strong> L"acteur a été supprimé.
+                      </div>';
             } else {
-                echo '<h3>L"acteur ne fait pas parti de la base de donnée ou a déjà été supprimé.</h3>';
+                echo '<h1>Jamais entendu parler</h1>
+                      <div class="alert alert-warning">
+                      <strong>Attention !</strong> L"acteur ne fait pas parti de la base de donnée ou a déjà été supprimé.
+                      </div>';
             }
+
 
         }
     }

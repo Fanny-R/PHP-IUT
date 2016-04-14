@@ -29,8 +29,8 @@ class Role
             $data = $query->fetch();
 
             if ($data['nb'] >= 1) {
-                echo '<h3>La liaison ' . $id_film . ' - ' . $id_acteur . ' existe déjà.</h3>';
-
+                echo '<h1>Aucun changement dans la base de donnée</h1>
+                        <div class="alert alert-warning"> <strong>Attention !</strong> La liaison ' . $id_film . ' - ' . $id_acteur . ' existe déjà. </div>';
             } else {
 
                 //Ajout de la liaison
@@ -38,9 +38,12 @@ class Role
                 $query = $bdd->prepare('INSERT INTO `casting`(`ID_ACTEUR`, `ID_FILM`) VALUES (:a, :f)');
                 $query->execute($infoLiaisonTableau);
 
-                echo '<h3>La liaison ' . $id_film . ' - ' . $id_acteur . ' a été inséré.</h3>';
+                echo '<h1>La base de donnée à été mise à jour</h1>
+                      <div class="alert alert-success"> <strong>Bravo!</strong> La liaison ' . $id_film . ' - ' . $id_acteur . ' a été inséré. </div>
+                      ';
 
             }
+
 
         }
 
