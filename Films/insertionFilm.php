@@ -10,16 +10,18 @@
 <body>
 <?php require_once('autoload.php'); ?>
 
+<!--Ajout d'un Film en base de donnée, retour sur l'ajout ou non pour l'utilisateur-->
+
 <?php
 $nom = $_POST['nom_film'];
 $annee = $_POST['annee_prod'];
 $score = $_POST['score'];
 
-if (!empty($nom) && (1880 <= $annee) && ($annee <= 2016) && ($score<=10) && ($score>=0)){
+if (!empty($nom) && (1880 <= $annee) && ($annee <= 2016) && ($score <= 10) && ($score >= 0)) {
     $monFilm = new Film(NULL, $nom, $annee, $score);
-    $valide = $monFilm->ajout();
+    $valide = $repoFilm->setFilm($monFilm);
 
-    if ($valide=== 1) {
+    if ($valide === 1) {
         echo '<h1>Merci de la modification !</h1>
                       <div class="alert alert-success">
                       <strong>Pafait !</strong> Le film ' . $title . ' a été mis à jour.
@@ -34,7 +36,7 @@ if (!empty($nom) && (1880 <= $annee) && ($annee <= 2016) && ($score<=10) && ($sc
 
     }
 
-}else{
+} else {
     echo '<h1>Mauvaise valeurs</h1>
                       <div class="alert alert-danger">
                       <strong>Attention !</strong> Les valeurs ne sont pas correctes.

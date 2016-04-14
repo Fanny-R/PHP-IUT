@@ -1,12 +1,32 @@
 <?php
 
-
+/**
+ * Class Acteur
+ * Permet l'instanciation d'un objet Acteur
+ */
 class Acteur
 {
+    /**
+     * @var Identifiant de l'acteur dans la base de donnée
+     */
+    public $id;
+    
+    /**
+     * @var Nom de l'acteur
+     */
+    public $nom_acteur;
+    
+    /**
+     * @var Prénom de l'acteur
+     */
+    public $prenom_acteur;
 
-    /****************/
-    /*    METHODE   */
-    /***************/
+    /**
+     * Acteur constructor.
+     * @param $id 
+     * @param $nom
+     * @param $prenom
+     */
     public function __construct($id, $nom, $prenom)
     {
         $this->id = $id;
@@ -15,100 +35,50 @@ class Acteur
 
     }
 
-    public function ajout()
-    {
-
-        $nom_acteur = $this->getNomActeur();
-        $prenom_acteur = $this->getPrenomActeur();
-
-        if (!empty($nom_acteur) || !empty($prenom_acteur)) {
-            $infoActeurTableau = array('n' => $nom_acteur, 'p' => $prenom_acteur);
-            $bdd = connectDb();
-            $query = $bdd->prepare('SELECT COUNT(*) AS nb FROM acteur WHERE NOM_ACTEUR = :n && PRENOM_ACTEUR = :p');
-            $query->execute($infoActeurTableau);
-            $data = $query->fetch();
-
-            if ($data['nb'] >= 1) {
-
-                return false;
-
-            } else {
-
-                //Ajout du film
-                $bdd = connectDb();
-                $query = $bdd->prepare('INSERT INTO `acteur`(`NOM_ACTEUR`, `PRENOM_ACTEUR`) VALUES (:n, :p)');
-                $query->execute($infoActeurTableau);
-
-                return true;
-            }
-
-
-        }
-    }
-
-    public function supprimer()
-    {
-        {
-            $id = $this->id;
-
-            if (!empty($id)) {
-                $ActSuppTableau = array('a' => $id);
-                $bdd = connectDb();
-                $query = $bdd->prepare('DELETE FROM `acteur` WHERE ID_ACTEUR = :a');
-                $query->execute($ActSuppTableau);
-
-                $query = $bdd->prepare('DELETE FROM `casting` WHERE ID_ACTEUR = :a');
-                $query->execute($ActSuppTableau);
-                return true;
-            } else {
-                return false;
-            }
-
-
-        }
-    }
-
-    /****************/
-    /*GETTER SETTTER*/
-    /***************/
-
+    /**
+     * @return int 
+     * Retourne l'identifiant d'un Acteur
+     */
     public function getId()
     {
         return $this->id;
     }
 
+    /**
+     * @return mixed
+     * Retourne le nom d'un acteur
+     */
     public function getNomActeur()
     {
         return $this->nom_acteur;
     }
 
-    public function getPrenomActeur()
-    {
-        return $this->prenom_acteur;
-    }
-
-    public function setId($id)
-    {
-        $this->id = $id;
-    }
-
+    /**
+     * @param $nom_acteur
+     * Permet de mofifier le nom d'un acteur
+     */
     public function setNomActeur($nom_acteur)
     {
         $this->nom_acteur = $nom_acteur;
     }
 
+    /**
+     * @return mixed
+     * Retourne le prenom d'un acteur
+     */
+    public function getPrenomActeur()
+    {
+        return $this->prenom_acteur;
+    }
+
+    /**
+     * @param $prenom_acteur
+     * Permet de modifier le nom d'un acteur
+     */
     public function setPrenomActeur($prenom_acteur)
     {
         $this->prenom_acteur = $prenom_acteur;
     }
-
-    /****************/
-    /*  ATTRIBUTS  */
-    /***************/
-
-    public $id;
-    public $nom_acteur;
-    public $prenom_acteur;
 
 
 }

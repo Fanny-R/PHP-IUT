@@ -1,31 +1,33 @@
 <?php
 
-class Repository
+/**
+ * Class Repository
+ * Permet la connexion à la BDD à ses enfants
+ */
+abstract class Repository
 {
+    /**
+     * @var PDO
+     * Objet de connexion
+     */
+    protected $PDO;
 
-
-    /****************/
-    /*    METHODE   */
-    /***************/
-
+    /**
+     * Repository constructor.
+     * @param PDO $PDO
+     */
     public function __construct(PDO $PDO)
     {
-        $this->PDO=$PDO;
+        $this->PDO = $PDO;
     }
 
-    /****************/
-    /*GETTER SETTTER*/
-    /***************/
-
+    /**
+     * @param $PDO
+     * Permet de définir la connexion
+     */
     public function setDb($PDO)
     {
         $this->$PDO = $PDO;
     }
-
-    /****************/
-    /*  ATTRIBUTS  */
-    /***************/
-
-    protected $PDO;
 
 }

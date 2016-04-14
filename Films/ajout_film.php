@@ -9,6 +9,8 @@
 <body>
 <?php require_once('autoload.php'); ?>
 
+<!--Permet de récupérer les données propres à la création d'un film-->
+
 <div class="container">
     <h2>Ajout d'un film</h2>
     <form role="form" method="post" action="insertionFilm.php">
@@ -20,7 +22,8 @@
 
         <div class="form-group">
             <label for="annee_prod">Année de production :</label>
-            <input type="number" name="annee_prod" id="annee_prod" class="form-control" size="10" maxlength="10"  min="1880" max="2016"/>
+            <input type="number" name="annee_prod" id="annee_prod" class="form-control" size="10" maxlength="10"
+                   min="1880" max="2016"/>
         </div>
 
         <div id="input_form">
