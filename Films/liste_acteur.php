@@ -4,7 +4,7 @@
     <link rel="stylesheet"
           href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <title>
-        PutridTomatoes : <?php echo $_GET['nom_film']; ?>
+        PutridTomatoes : <?php echo str_replace('_', ' ', $_GET['nom_film']); ?>
     </title>
 </head>
 <body>
@@ -13,7 +13,7 @@
 
 <div class="container">
     <h2>
-        <?php echo $_GET['nom_film']; ?> : Les acteurs
+        s<?php echo str_replace('_', ' ', $_GET['nom_film']); ?> : Les acteurs
     </h2>
 
 

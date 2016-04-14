@@ -38,7 +38,7 @@ class Role
                 $query = $bdd->prepare('INSERT INTO `casting`(`ID_ACTEUR`, `ID_FILM`) VALUES (:a, :f)');
                 $query->execute($infoLiaisonTableau);
 
-                echo '<h1>La base de donnée à été mise à jour</h1>
+                echo '<h1>Un lien éternel</h1>
                       <div class="alert alert-success"> <strong>Bravo!</strong> La liaison ' . $id_film . ' - ' . $id_acteur . ' a été inséré. </div>
                       ';
 
