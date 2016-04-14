@@ -8,4 +8,7 @@ spl_autoload_register(function($classname)
 });
 
 require_once("connexion.php");
+$PDO = connectDb();
+$repoFilm = new FilmRepository($PDO);
+$repoActeur = new ActeurRepository($PDO);
 require_once ("nav_bar.php");

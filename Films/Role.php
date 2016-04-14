@@ -29,19 +29,14 @@ class Role
             $data = $query->fetch();
 
             if ($data['nb'] >= 1) {
-                echo '<h1>Aucun changement dans la base de donnée</h1>
-                        <div class="alert alert-warning"> <strong>Attention !</strong> La liaison ' . $id_film . ' - ' . $id_acteur . ' existe déjà. </div>';
+                return false;
             } else {
-
                 //Ajout de la liaison
                 $bdd = connectDb();
                 $query = $bdd->prepare('INSERT INTO `casting`(`ID_ACTEUR`, `ID_FILM`) VALUES (:a, :f)');
                 $query->execute($infoLiaisonTableau);
 
-                echo '<h1>Un lien éternel</h1>
-                      <div class="alert alert-success"> <strong>Bravo!</strong> La liaison ' . $id_film . ' - ' . $id_acteur . ' a été inséré. </div>
-                      ';
-
+                return true;
             }
 
 

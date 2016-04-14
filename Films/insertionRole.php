@@ -16,10 +16,18 @@
 $id_film = $_POST['Film'];
 $id_acteur = $_POST['Acteur'];
 $monRole= new Role($id_film,$id_acteur);
-// Est ce qu'il serait pas possible d'envoyer deux objet, un objet Film et
-// un autre Role pour par la suite, indiquer le nom du film et pas juste son ID à l'user.
 
-$monRole->liaison();
+$valide =$monRole->liaison();
+
+if (!$valide) {
+    echo '<h1>Aucun changement dans la base de donnée</h1>
+                        <div class="alert alert-warning"> <strong>Attention !</strong> La liaison ' . $repoFilm->getFilm($id_film)->getTitle() . ' - ' . $repoActeur->getActeur($id_acteur)->getPrenomActeur() .' '. $repoActeur->getActeur($id_acteur)->getNomActeur() . ' existe déjà. </div>';
+} else {
+    echo '<h1>Un lien éternel</h1>
+                      <div class="alert alert-success"> <strong>Bravo!</strong> La liaison ' . $repoFilm->getFilm($id_film)->getTitle() . ' - ' . $repoActeur->getActeur($id_acteur)->getPrenomActeur() .' '. $repoActeur->getActeur($id_acteur)->getNomActeur() . ' a été inséré. </div>
+                      ';
+
+}
 ?>
 
 </body>

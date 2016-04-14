@@ -13,7 +13,7 @@
 
 <div class="container">
     <h2>
-        s<?php echo str_replace('_', ' ', $_GET['nom_film']); ?> : Les acteurs
+        <?php echo str_replace('_', ' ', $_GET['nom_film']); ?> : Les acteurs
     </h2>
 
 

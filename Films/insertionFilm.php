@@ -17,7 +17,23 @@ $score = $_POST['score'];
 
 if (!empty($nom) && (1880 <= $annee) && ($annee <= 2016) && ($score<=10) && ($score>=0)){
     $monFilm = new Film(NULL, $nom, $annee, $score);
-    $monFilm->ajout();
+    $valide = $monFilm->ajout();
+
+    if ($valide=== 1) {
+        echo '<h1>Merci de la modification !</h1>
+                      <div class="alert alert-success">
+                      <strong>Pafait !</strong> Le film ' . $title . ' a été mis à jour.
+                      </div>';
+
+    } else {
+
+        echo '<h1>Et un de plus !</h1>
+                      <div class="alert alert-success">
+                      <strong>Pafait !</strong> Le film ' . $title . ' a été inséré.
+                      </div>';
+
+    }
+
 }else{
     echo '<h1>Mauvaise valeurs</h1>
                       <div class="alert alert-danger">
