@@ -16,6 +16,7 @@
             <th>Titre</th>
             <th>Année</th>
             <th>Score</th>
+            <th>Plus...</th>
         </tr>
         </thead>
         <tbody>
