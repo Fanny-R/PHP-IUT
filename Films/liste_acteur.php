@@ -43,12 +43,16 @@
                 <td><?php echo $acteur->getPrenomActeur(); ?></td>
                 <td><?php echo $acteur->getNomActeur(); ?></td>
             </tr>
+
             <?php
         }
+                ?>
+         </tbody>
+    </table>
+         <?php
         }
         ?>
-        </tbody>
-    </table>
+
 
 </div>
 </body>
