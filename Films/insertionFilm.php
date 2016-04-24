@@ -24,14 +24,14 @@ if (!empty($nom) && (1880 <= $annee) && ($annee <= 2016) && ($score <= 10) && ($
     if ($valide === 1) {
         echo '<h1>Merci de la modification !</h1>
                       <div class="alert alert-success">
-                      <strong>Pafait !</strong> Le film ' . $title . ' a été mis à jour.
+                      <strong>Parfait !</strong> Le film ' . $nom . ' a été mis à jour.
                       </div>';
 
     } else {
 
         echo '<h1>Et un de plus !</h1>
                       <div class="alert alert-success">
-                      <strong>Pafait !</strong> Le film ' . $title . ' a été inséré.
+                      <strong>Parfait !</strong> Le film ' . $nom. ' a été inséré.
                       </div>';
 
     }
