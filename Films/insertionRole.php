@@ -27,7 +27,7 @@ if (!$valide) {
                         <div class="alert alert-warning"> <strong>Attention !</strong> La liaison ' . $repoFilm->getFilm($id_film)->getTitle() . ' - ' . $repoActeur->getActeur($id_acteur)->getPrenomActeur() . ' ' . $repoActeur->getActeur($id_acteur)->getNomActeur() . ' existe déjà. </div>';
 } else {
     echo '<h1>Un lien éternel</h1>
-                      <div class="alert alert-success"> <strong>Bravo!</strong> La liaison ' . $repoFilm->getFilm($id_film)->getTitle() . ' - ' . $repoActeur->getActeur($id_acteur)->getPrenomActeur() . ' ' . $repoActeur->getActeur($id_acteur)->getNomActeur() . ' a été inséré. </div>
+                      <div class="alert alert-success"> <strong>Bravo !</strong> La liaison ' . $repoFilm->getFilm($id_film)->getTitle() . ' - ' . $repoActeur->getActeur($id_acteur)->getPrenomActeur() . ' ' . $repoActeur->getActeur($id_acteur)->getNomActeur() . ' a été insérée. </div>
                       ';
 
 }
