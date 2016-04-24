@@ -11,13 +11,13 @@
 <!--Permet de récupérer les données propres à la création d'un role-->
 
 <div class="container">
-    <h2>Faite le lien entre acteur et film</h2>
-    <form method="post" action="insertionRole.php" role="form">
+    <h2>Faites le lien entre acteur et film</h2>
+    <form method="post" action="insertionRole.php">
 
 
-        <div class=w"form-group">
+        <div class="form-group">
             <label for="sel1">Sélectionner un film:</label>
-            <select name="Film" size="1" class="form-control">
+            <select name="Film" size="1" class="form-control" id="sel1">
                 <?php
                 $repoFilm = new FilmRepository($PDO);
                 $data = $repoFilm->getAllFilm();
@@ -31,8 +31,8 @@
         </div>
 
 
-        <label for="sel1">Sélectionner un Acteur:</label>
-        <select name="Acteur" size="1" class="form-control">
+        <label for="sel2">Sélectionner un Acteur:</label>
+        <select name="Acteur" size="1" class="form-control" id="sel2">
 
             <?php
             $repoActeur = new ActeurRepository($PDO);
