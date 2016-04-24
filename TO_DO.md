@@ -7,7 +7,7 @@
 - [x] Validation des données côté serveur (PHP ? Langage serveur... if(...) ?)
 - [x] Variable injecté via execute()
 - [x] Nom de fonction et variable claire
-- [ ] Valide W3C
+- [x] Valide W3C
 - [x] Générer la documentation PHP
 
 
