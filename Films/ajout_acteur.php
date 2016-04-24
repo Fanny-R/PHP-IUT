@@ -11,7 +11,7 @@
 <!--Permet de récupérer les données propres à la création d'un acteur-->
 <div class="container">
     <h2>Ajout d'un acteur</h2>
-    <form role="form" method="post" action="insertionActeur.php">
+    <form method="post" action="insertionActeur.php">
 
         <div class="form-group">
             <label for="prenom_acteur">Prénom:</label>
